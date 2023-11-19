@@ -16,8 +16,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class OrderServiceImpl implements OrderService {
 
+  @Getter
   private MemberRepository memberRepository;
-  private final DiscountPolicy discountPolicy;
+  private  DiscountPolicy discountPolicy;
 
 
   @Autowired
@@ -56,4 +57,5 @@ public class OrderServiceImpl implements OrderService {
   public FixDiscountPolicy getDiscountPolicy() {
     return (FixDiscountPolicy) discountPolicy;
   }
+
 }

@@ -49,4 +49,6 @@ public class NetworkClient  {
         disconnect();
     }
 
+    public class LifeCycleConfig {
+    }
 }
